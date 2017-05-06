@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ECE595 Project</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		<div id="div1">
+			<h1>ECE595 Main Project Demo Version1</h1>
+			</div><br/>
+		<div id="div2">
+			<h2>Spanning Tree Algorithm Overview</h2><br/>
+			<p style="margin-left: 20px">1. Motivation:</p>
+			<p style="margin-left: 40px">Spanning tree alogrithm is a solution to the loop problems in network address learning. It can maintain a spanning tree for given topology in a dynamic environment. The following part would mainly focus on the distributed algorithms.<p/>
+			<p style="margin-left: 20px">2. Terminologies:</p>
+			<p style="margin-left: 40px">-Root Bridges: The bridge with the lowest identifier is the root of the spanning tree.</p>
+			<p style="margin-left: 40px">-Root Path Cost: For each bridge, the cost of the min-cost path to the root, measured in number of hops to the root.</p>
+			<p style="margin-left: 40px">-BPDU: Configuration bridge protocol data unit, a message being sent between bridges that contains root ID, root path cost and bridge ID information.</p>
+			<p style="margin-left: 20px">3. Principles:</p>
+			<p style="margin-left: 40px">-Initially all bridges assume theay are the root bridge. Each bridge sends their BPDUs on all its ports.</p>
+			<p style="margin-left: 40px">-Upon receiving BPDU on a port, bridge checks if received one can lead to a better mapping. If any BPDU received is considered better, then the bridge will converge, namely taking the root ID in BPDU as its own root bridge, adding 1 to the cost. </p>
+			<p style="margin-left: 40px">-When comparing two BPDUs M1 and M2 with the form (R1|C1|B1) and (R2|C2|B2), the following ordering principles would apply:</p>
+			<p style="margin-left: 50px">If (R1 < R2) </p>
+			<p style="margin-left: 60px">M1 better than M2</p>
+			<p style="margin-left: 50px">elseif ((R1 == R2) & (C1 < C2))</p>
+			<p style="margin-left: 60px">M1 better than M2</p>
+			<p style="margin-left: 50px">elseif ((R1 == R2) & (C1 == C2) & (B1 < B2))</p>
+			<p style="margin-left: 60px">M1 better than M2</p>
+			<p style="margin-left: 50px">else</p>
+			<p style="margin-left: 60px">M2 better than M1</p>
+			<p style="margin-left: 40px">-After a bridge has done the message processing and generated its new BPDU, it will only forward this BPDU on one of its ports only if any BPDUs received from that port is worse than its new BPDU.</p>
+			<br/>
+			<a href="webgl_test.html" style="margin-left: 20px">4. Spanning Tree Converging Example</a><br/>
+			<p style="margin-left: 20px">5. Reserved slot for further explanation</p>
+			</div><br/>
+		<div id="div4">
+			<h3>Resources and external links</h3>
+			</div><br/>
+		<div id="div5">
+			<p>Zhongyu Jiang & Zijian Zhu</p>
+			<p>2017-04-12</p>
+			</div><br/><br/>
+	</body>
+</html>

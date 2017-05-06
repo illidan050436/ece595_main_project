@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<!-- Head -->
+<head>
+<title>ECE595 Project_example1</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="template3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="test3.js" type="text/javascript"></script>
+</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+.e595-bar .e595-button {
+    padding: 16px;
+}
+</style>
+
+<body onload="test_start()">
+	<div class="e595-container e595-light-grey" style="padding:8px 8px" id="example">
+		<h3 class="e595-center">Spanning Tree Algorithm Example1</h3>
+  		<p class="e595-center e595-large">Walk through of a typical spanning tree topology</p>
+  		<div class="e595-row-padding" style="margin-top:8px">
+  			<div class="e595-col m8">
+				<canvas id="test_canvas" style="border:5px solid #000000;" width="1200" height="800">
+				Your browser doesn't appear to support the <code>&lt;canvas&gt;</code> element.
+				</canvas></div>
+			<div class="e595-col m4" id="explain_div" style="border:5px solid #000000;">
+				<button id="button4" type="button" onclick="button5_event()">Start</button></br>
+				<button id="button1" type="button" onclick="button1_event()">Pause</button><br/>
+				<button id="button2" type="button" onclick="button2_event()">Resume</button><br/>
+				<button id="button3" type="button" onclick="button3_event()">SpeedUp</button></br>
+				<button id="button4" type="button" onclick="button4_event()">SpeedDown</button></br>
+				<h2 class="e595-center">Legend</h2>
+				<p style="margin-left: 5px" id="step_para" >Legend: <br/> 4 LANs with red boxes.<br/> 5 bridges with black boxes.<br/> 11 links between bridges and LANs.<br/> Messages are in the blue boxes.<br/> The bridge BPDU state table and link state table are in green boxes.<br/></p></div>
+		</div>
+	
+</div>
+
+<!-- Footer -->
+<footer class="e595-center e595-black e595-padding-64">
+  <a href="index.html" class="e595-button e595-light-grey"><i class="fa fa-arrow-up e595-margin-right"></i>BackToMainPage</a>
+  <div class="e595-xlarge e595-section">
+    <a href="http://www.facebook.com/illidan.jiang"><i class="fa fa-facebook-official e595-hover-opacity"></i></a>
+    <a href="http://www.instagram.com/absinthejiang"><i class="fa fa-instagram e595-hover-opacity"></i></a>
+    <a href="http://www.linkedin.com/in/zhongyu-jiang-21039366"><i class="fa fa-linkedin e595-hover-opacity"></i></a>
+    <a href="http://www.weibo.com/illidan050436"><i class="fa fa-weibo e595-hover-opacity"></i></a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  // Add load event listener.
+  window.addEventListener("load", loadTime, false);
+
+  function loadTime() {
+    // Get current time.
+    var now = new Date().getTime();
+    // Calculate page load time.
+    var page_load_time = now - performance.timing.navigationStart;
+    // Write the load time to the F12 console.
+    if (window.console) console.log("Page Load Time = " + page_load_time);
+  }
+  //console.log(window.performance.memory:MemoryInfo.jsHeapSizeLimit);
+  console.log(window.performance);
+</script>
+</body>
+</html>

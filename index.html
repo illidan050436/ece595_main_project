@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+<head>
+<title>ECE595 Main Project Version3</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="template3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("test1.jpg");
+    min-height: 100%;
+}
+.e595-bar .e595-button {
+    padding: 16px;
+}
+</style>
+
+<!-- Start of html body -->
+<body>
+<!-- Navbar (sit on top) -->
+<div class="e595-top">
+  <div class="e595-bar e595-white e595-card-2" id="myNavbar"> 
+    <a href="#home" class="e595-bar-item e595-button e595-wide">START</a>
+    <!-- Right-sided navbar links -->
+    <div class="e595-right e595-hide-small">
+      <a href="#about" class="e595-bar-item e595-button"><i class="fa fa-info-circle"></i> ABOUT</a> 
+      <a href="#protocol" class="e595-bar-item e595-button"><i class="fa fa-book"></i> PROTOCOL</a>
+      <a href="#example" class="e595-bar-item e595-button"><i class="fa fa-th"></i> EXAMPLE</a>
+      <a href="#team" class="e595-bar-item e595-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#contact" class="e595-bar-item e595-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="e595-bar-item e595-button e595-right e595-hide-large e595-hide-medium" onclick="e595_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="e595-sidebar e595-bar-block e595-black e595-card-2 e595-animate-left e595-hide-medium e595-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="e595_close()" class="e595-bar-item e595-button e595-large e595-padding-16">Close X</a>
+  <a href="#about" onclick="e595_close()" class="e595-bar-item e595-button">ABOUT</a>
+  <a href="#protocol" onclick="e595_close()" class="e595-bar-item e595-button">PROTOCOL</a> 
+  <a href="#example" onclick="e595_close()" class="e595-bar-item e595-button">EXAMPLE</a>
+  <a href="#team" onclick="e595_close()" class="e595-bar-item e595-button">TEAM</a>
+  <a href="#contact" onclick="e595_close()" class="e595-bar-item e595-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 e595-display-container e595-grayscale-min" id="home">
+  <div class="e595-display-left e595-text-black" style="padding:48px">
+    <span style="background-color:#FFF" class="e595-jumbo e595-hide-small e595-opacity">Explore the world of networks</span><br>
+    <span style="background-color:#FFF" class="e595-xxlarge e595-hide-large e595-hide-medium">Explore the world of networks</span><br>
+    <span class="e595-large">Stop wasting valuable time with materials that doesn't fit you.</span>
+    <p><a href="#about" class="e595-button e595-black e595-padding-large e595-large e595-margin-top e595-opacity e595-hover-opacity-off">Start learning classic network protocols</a></p>
+  </div> 
+  <div class="e595-display-bottomleft e595-text-grey e595-large" style="padding:24px 48px">
+    <a href="http://www.facebook.com/illidan.jiang"><i class="fa fa-facebook-official e595-hover-opacity"></i></a>
+    <a href="http://www.instagram.com/absinthejiang"><i class="fa fa-instagram e595-hover-opacity"></i></a>
+    <a href="http://www.linkedin.com/in/zhongyu-jiang-21039366"><i class="fa fa-linkedin e595-hover-opacity"></i></a>
+    <a href="http://www.weibo.com/illidan050436"><i class="fa fa-weibo e595-hover-opacity"></i></a>
+  </div>
+</header>
+
+<!-- About The Team section -->
+<div class="e595-container" style="padding:128px 16px" id="about">
+  <h3 class="e595-center">ABOUT THE PROJECT</h3>
+  <p class="e595-center e595-large">Key features of our learning tools</p>
+  <div class="e595-row-padding e595-center" style="margin-top:64px">
+    <div class="e595-quarter">
+      <i class="fa fa-desktop e595-margin-bottom e595-jumbo e595-center"></i>
+      <p class="e595-large">Comprehensive</p>
+      <p>Protocol principle and algorithm walk through included to give the user a complete view of the classic network protocol.</p>
+    </div>
+    <div class="e595-quarter">
+      <i class="fa fa-hand-pointer-o e595-margin-bottom e595-jumbo"></i>
+      <p class="e595-large">Interactive</p>
+      <p>Animation example provided to show the algorithm with an interactive fashion.</p>
+    </div>
+    <div class="e595-quarter">
+      <i class="fa fa-cog e595-margin-bottom e595-jumbo"></i>
+      <p class="e595-large">Compatibility</p>
+      <p>Compatible with most widely used browsers like chrome, safari and edge.</p>
+    </div>
+    <div class="e595-quarter">
+      <i class="material-icons e595-margin-bottom e595-jumbo">phone_iphone</i>
+      <p class="e595-large">Mobility</p>
+      <p>More support for devices with different screen sizes.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Protocol Section -->
+<div class="e595-container e595-center e595-dark-grey" style="padding:128px 16px" id="protocol">
+  <h3>Protocol Details</h3>
+  <p class="e595-large">Spanning Tree Algorithm Overview</p>
+  <div class="e595-row-padding" style="margin-top:64px">
+    <div class="e595-third e595-section">
+      <ul class="e595-ul e595-white e595-hover-shadow">
+        <li class="e595-black e595-xlarge e595-padding-32">Motivation</li>
+        <p class ="e595-center e595-large">Spanning tree alogrithm is a solution to the loop problems in network address learning. It can maintain a spanning tree for given topology in a dynamic environment. The following part would mainly focus on the distributed algorithms.</p>
+        <li class="e595-light-grey e595-padding-24">
+          <a href="#principle"><button class="e595-button e595-black e595-padding-large">Principles Followed</button></a>
+        </li>
+      </ul>
+    </div>
+    <div class="e595-third e595-section">
+      <ul class="e595-ul e595-white e595-hover-shadow">
+        <li class="e595-black e595-xlarge e595-padding-32">Terminologies</li>
+        <li class="e595-padding-16 e595-large" style="text-align:left"><b>-Root Bridges:</b><br/> The bridge with the lowest identifier is the root of the spanning tree.</li>
+        <li class="e595-padding-16 e595-large" style="text-align:left"><b>-Root Port:</b><br/> Each bridge has a root port which identifies the next hop from a bridge to the root.</li>
+        <li class="e595-padding-16 e595-large" style="text-align:left"><b>-Root Path Cost:</b><br/> For each bridge, the cost of the min-cost path to the root, measured in number of hops to the root.</li>
+      </ul>
+    </div>
+    <div class="e595-third e595-section">
+      <ul class="e595-ul e595-white e595-hover-shadow">
+        <li class="e595-black e595-xlarge e595-padding-32">Terminologies</li>
+        <li class="e595-padding-16 e595-large" style="text-align:left"><b>-Designated Bridge:</b><br/> Bridge on LAN that provides minimal cost path to root for this LAN. If two bridges have the same cost, select one with lower identifier.</li>
+        <li class="e595-padding-16 e595-large" style="text-align:left"><b>-Designated Port:</b><br/> If a bridge is the designated bridge for a LAN, the appropriate port is the designated port.</li>
+        <li class="e595-padding-16 e595-large" style="text-align:left"><b>-BPDU:</b><br/> Configuration bridge protocol data unit, a message being sent between bridges that contains root ID, root path cost and bridge ID information.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Principle Section -->
+<div class="e595-container e595-blue-grey" style="padding:128px 16px" id="principle">
+  <div class="e595-row-padding">
+    <div class="e595-col m6">
+      <ul class="e595-ul e595-white e595-hover-shadow">
+      <li class="e595-black e595-xlarge e595-padding-32">Principle</li>
+      <li class="e595-padding-16 e595-large" style="text-align:left">-Initially all bridges assume theay are the root bridge. Each bridge sends their BPDUs on all its ports.</li>
+      <li class="e595-padding-16 e595-large" style="text-align:left">-Upon receiving BPDU on a port, bridge checks if received one can lead to a better mapping.  </li>
+      <li class="e595-padding-16 e595-large" style="text-align:left">-If any BPDU received is considered better, then the bridge will converge, namely taking the root ID in BPDU as its own root bridge, adding 1 to the cost.</li>
+      </ul>
+      <p><a href="#example" class="e595-button e595-black"><i class="fa fa-th"> </i> View Our Examples</a></p>
+    </div>
+    <div class="e595-col m6">
+      <img class="e595-image e595-round-large" src="test2.jpg" alt="log_output" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="e595-container e595-light-grey e595-padding-64">
+  <div class="e595-row-padding">
+    <div class="e595-col m6">
+      <ul class="e595-ul e595-white e595-hover-shadow">
+      <li class="e595-black e595-xlarge e595-padding-32">Ordering of Messages</li>
+      <li class="e595-padding-16 e595-large" style="text-align:left">-When comparing two BPDUs M1 and M2, the ordering principles on the right would apply. </li>
+      <li class="e595-padding-16 e595-large" style="text-align:left">-M1 and M2 are with the form [R1 | C1 | B1] and [R2 | C2 | B2], in which correspond to (root bridge id|root path cost|sending bridge id)</li>
+      <li class="e595-padding-16 e595-large" style="text-align:left">-After a bridge has done the message processing and generated its new BPDU, it will only forward this BPDU on one of its ports only if any BPDUs received from that port is worse than its new BPDU. </li>
+      </ul>
+    </div>
+    <div class="e595-col m6">
+      <ul class="e595-ul e595-white e595-hover-shadow">
+      <li class="e595-black e595-xlarge e595-padding-32">Ordering Principles</li>
+      <li class="e595-padding-16 e595-large" style="text-align:left">-We can order BPDU messages with the following ordering relation, icon <i = class="fa fa-arrow-circle-left"></i> means better than. </li>
+      <li class="e595-padding-16 e595-large" style="padding-left:24px">  If (R1 < R2)</li>
+      <li class="e595-padding-16 e595-large" style="padding-left:48px">     M1 <i = class="fa fa-arrow-circle-left"></i> M2</li>
+      <li class="e595-padding-16 e595-large" style="padding-left:24px">  elseif ((R1 == R2) & (C1 < C2))</li>
+      <li class="e595-padding-16 e595-large" style="padding-left:48px">     M1 <i = class="fa fa-arrow-circle-left"></i> M2</li>
+      <li class="e595-padding-16 e595-large" style="padding-left:24px">  elseif ((R1 == R2) & (C1 == C2) & (B1 < B2))</li>
+      <li class="e595-padding-16 e595-large" style="padding-left:48px">     M1 <i = class="fa fa-arrow-circle-left"></i> M2</li>
+      <li class="e595-padding-16 e595-large" style="padding-left:24px">  else</li>
+      <li class="e595-padding-16 e595-large" style="padding-left:48px">     M2 <i = class="fa fa-arrow-circle-left"></i> M1</li>      
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Example Section -->
+<div class="e595-container" style="padding:128px 16px" id="example">
+  <h3 class="e595-center">OUR EXAMPLES</h3>
+  <p class="e595-center e595-large">Example with Aniamtions</p>
+  <div class="e595-row-padding" style="margin-top:64px">
+    <div class="e595-col m6">
+     <div class="e595-card-2 e595-center">
+        <img src="example1.jpg" alt="example1" style="width:50%">
+        <div class="e595-container">
+          <h3>Example1</h3>
+          <p>Work through of a typical spanning tree topology with full animations. </p>
+          <p><a href="canvas_test3.html"><button class="e595-button e595-light-grey e595-block"><i class="fa fa-mars"></i> Explore</button></a></p>
+        </div>
+      </div>
+    </div>
+  <div class="e595-col m6">
+     <div class="e595-card-2 e595-center">
+        <img src="example2.jpg" alt="example2" style="width:50%">
+        <div class="e595-container">
+          <h3>Example2</h3>
+          <p>Work through of the link failure mode with full animations. </p>
+          <p><a href="canvas_test4.html"><button class="e595-button e595-light-grey e595-block"><i class="fa fa-meh-o"></i> Explore</button></a></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Team Section -->
+<div class="e595-container e595-light-grey" style="padding:128px 16px" id="team">
+  <h3 class="e595-center">THE TEAM</h3>
+  <p class="e595-center e595-large">ECE595 Project</p>
+  <div class="e595-row-padding e595-grayscale" style="margin-top:64px"> 
+    <div class="e595-col m6 e595-margin-bottom">
+      <div class="e595-card-2 e595-center">
+        <img src="team1.jpg" alt="jiang" style="width:40%">
+        <div class="e595-container">
+          <h3>Zhongyu Jiang</h3>
+          <p class="e595-opacity">Web Design</p>
+          <p>Computer engineering graduate student at Purdue. Focusing on web UI design and cloud implementation. </p>
+          <p><button class="e595-button e595-light-grey e595-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="e595-col m6 e595-margin-bottom">
+      <div class="e595-card-2 e595-center">
+        <img src="team2.jpg" alt="zhu" style="width:40%">
+        <div class="e595-container">
+          <h3>Zijian Zhu</h3>
+          <p class="e595-opacity">Web Design</p>
+          <p>Computer engineering graduate student at Purdue. Focusing on animation design. </p>
+          <p><button class="e595-button e595-light-grey e595-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- "Statistics" -->
+<div class="e595-container e595-row e595-center e595-dark-grey e595-padding-64">
+  <div class="e595-col s4">
+    <span class="e595-xxlarge">5+</span>
+    <br>Projects Done
+  </div>
+  <div class="e595-col s4">
+    <span class="e595-xxlarge">100+</span>
+    <br>Website Performance Test
+  </div>
+  <div class="e595-col s4">
+    <span class="e595-xxlarge">20+</span>
+    <br>Meetings
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="e595-container e595-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="e595-center">CONTACT</h3>
+  <p class="e595-center e595-large">Welcome to send us any feedback to help out our design. </p>
+  <div class="e595-row-padding" style="margin-top:64px">
+    <div class="e595-half">
+      <p><i class="fa fa-map-marker fa-fw e595-xxlarge e595-margin-right"></i> West Lafayette, IN</p>
+      <p><i class="fa fa-phone fa-fw e595-xxlarge e595-margin-right"></i> Phone: 765-490-7924</p>
+      <p><i class="fa fa-envelope fa-fw e595-xxlarge e595-margin-right"> </i> Email: jjiang162@purdue.edu</p>
+      <br>
+    </div>
+    <div class="e595-half">
+      <!-- Add Google Maps -->
+      <div id="googleMap" style="width:100%;height:510px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="e595-center e595-black e595-padding-64">
+  <a href="#home" class="e595-button e595-light-grey"><i class="fa fa-arrow-up e595-margin-right"></i>To the top</a>
+  <div class="e595-xlarge e595-section">
+    <a href="http://www.facebook.com/illidan.jiang"><i class="fa fa-facebook-official e595-hover-opacity"></i></a>
+    <a href="http://www.instagram.com/absinthejiang"><i class="fa fa-instagram e595-hover-opacity"></i></a>
+    <a href="http://www.linkedin.com/in/zhongyu-jiang-21039366"><i class="fa fa-linkedin e595-hover-opacity"></i></a>
+    <a href="http://www.weibo.com/illidan050436"><i class="fa fa-weibo e595-hover-opacity"></i></a>
+  </div>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(40.4286429, -86.91191879999997);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function e595_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function e595_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<!-- get the credentials from google map javascript api -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtSpwR8EkAwmbvNBQOw9jY_3x7XcMfgbc&callback=myMap"></script>
+
+<!-- load time estimator for debugging purpose -->
+<script type="text/javascript">
+  // Add load event listener.
+  window.addEventListener("load", loadTime, false);
+
+  function loadTime() {
+    // Get current time.
+    var now = new Date().getTime();
+    // Calculate page load time.
+    var page_load_time = now - performance.timing.navigationStart;
+    // Write the load time to the F12 console.
+    if (window.console) console.log("Page Load Time = " + page_load_time);
+  }
+  //console.log(window.performance.memory:MemoryInfo.jsHeapSizeLimit);
+  console.log(window.performance);
+</script>
+
+</body>
+</html>
